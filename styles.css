@@ -1,1 +1,83 @@
-/* Add styles for the gallery */
+/* General styles for the page */
+body {
+    font-family: 'Old English Five', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px; /* Increased padding for the header */
+    text-align: center;
+    font-family: 'Old English Five', sans-serif;
+    font-size: 28px; /* Increased font size for the header */
+}
+
+/* Styles for the gallery layout */
+main {
+    display: flex;
+}
+
+#artwork-list {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#artwork-details {
+    flex: 2;
+}
+
+/* Styles for the favorite button (star) */
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.star {
+    color: #ccc; /* Default color */
+}
+
+.star.active {
+    color: yellow; /* Active color */
+}
+
+/* Slideshow styles */
+.results {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display list items in a row */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.results li {
+    flex: 0 0 100%; /* Each slide takes the full width */
+    display: none;
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+}
+
+.results li img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #fff; /* Border color for the frame */
+    box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+.results li.active {
+    display: block;
+}
+
+/* Underline words for easier reading */
+body {
+    text-decoration: underline;
+}
